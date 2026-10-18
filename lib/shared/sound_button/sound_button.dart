@@ -17,7 +17,7 @@ class SoundButton extends StatelessWidget {
         try {
           await audioPlayer.play(AssetSource(soundPath));
         } catch (e) {
-          print('Error al reproducir el sonido: $e'); // no se recomienda usar print en producción, pero sirve para depuración
+          debugPrint('Error al reproducir el sonido: $e');
         }
       },
       child: Text('Reproducir Sonido'),
