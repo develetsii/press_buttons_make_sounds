@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:audioplayers/audioplayers.dart';
+//import 'package:audioplayers/audioplayers.dart';
 
 class SoundButton extends StatelessWidget {
   // un botón que reprudce un sonido al ser presionado
@@ -10,12 +10,12 @@ class SoundButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final AudioPlayer audioPlayer = AudioPlayer();
+    //final AudioPlayer audioPlayer = AudioPlayer();
 
     return ElevatedButton(
       onPressed: () async {
         try {
-          await audioPlayer.play(AssetSource(soundPath));
+          // await audioPlayer.play(AssetSource(soundPath));
         } catch (e) {
           debugPrint('Error al reproducir el sonido: $e');
         }

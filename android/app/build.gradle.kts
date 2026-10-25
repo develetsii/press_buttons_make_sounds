@@ -37,3 +37,10 @@ android {
 flutter {
     source = "../.."
 }
+kotlin {
+    compilerOptions {
+        jvmTarget.set(
+            org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17
+        )
+    }
+}
