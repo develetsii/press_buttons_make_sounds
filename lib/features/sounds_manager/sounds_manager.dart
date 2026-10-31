@@ -3,14 +3,14 @@ import 'package:press_buttons_make_sounds/data/services/sound_button.serv.dart';
 import 'package:press_buttons_make_sounds/domain/models/sound_button.model.dart';
 import 'package:provider/provider.dart';
 
-class SoundButtonScreen extends StatefulWidget {
-  const SoundButtonScreen({super.key});
+class SoundManagerPage extends StatefulWidget {
+  const SoundManagerPage({super.key});
 
   @override
-  State<SoundButtonScreen> createState() => _SoundButtonScreenState();
+  State<SoundManagerPage> createState() => _SoundManagerPageState();
 }
 
-class _SoundButtonScreenState extends State<SoundButtonScreen> {
+class _SoundManagerPageState extends State<SoundManagerPage> {
   @override
   void initState() {
     super.initState();
