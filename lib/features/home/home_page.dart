@@ -8,7 +8,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
       child: GridView.builder(
-        itemCount: 12, 
+        itemCount: 0, 
         padding: const EdgeInsets.all(18.0),
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 3,
