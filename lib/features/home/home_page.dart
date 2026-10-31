@@ -5,10 +5,17 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final int buttonCount = 0;
+    if (buttonCount == 0){
+      return const Scaffold(
+        body: SafeArea(child: Center(child: Text('No sound buttons yet.'))),
+      );  
+    }
+
     return Scaffold(
       body: SafeArea(
       child: GridView.builder(
-        itemCount: 0, 
+        itemCount: buttonCount, 
         padding: const EdgeInsets.all(18.0),
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 3,
